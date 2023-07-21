@@ -13,7 +13,7 @@ interface GalleryProps {
 
 function Gallery({ images }: GalleryProps) {
   return (
-    <div className="gallery">
+    <div data-testid="gallery" className="gallery">
       {images.map((image) => (
         <img key={image.id} src={image.previewURL} alt={image.tags} />
       ))}

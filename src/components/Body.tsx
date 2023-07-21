@@ -14,7 +14,7 @@ interface BodyProps {
 function Body({ images }: BodyProps) {
   return (
     <div data-testid="body">
-      <Gallery  images={images} />
+      <Gallery data-testid="gallery"  images={images} />
     </div>
   );
 }
